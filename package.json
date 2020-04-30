@@ -4,6 +4,7 @@
   "description": "Starter Code for Node Server Testing Module",
   "main": "index.js",
   "scripts": {
+    "test": "jest --watch",
     "server": "nodemon index.js",
     "start": "node index.js"
   },
@@ -16,6 +17,11 @@
     "sqlite3": "^4.1.1"
   },
   "devDependencies": {
-    "nodemon": "^2.0.2"
+    "jest": "^25.5.2",
+    "nodemon": "^2.0.2",
+    "supertest": "^4.0.2"
+  },
+  "jest": {
+    "testEnvironment": "node"
   }
 }
